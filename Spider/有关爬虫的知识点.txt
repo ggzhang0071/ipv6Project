@@ -1,0 +1,28 @@
+url
+html
+user-agent
+header
+cookie 可以叫做浏览器缓存
+
+re 正则表达式(reguler expression)
+
+xpath
+
+css 层叠样式表（cascading style sheet)
+
+encoding （编码）
+
+json
+
+ajax
+
+xhr
+
+javascript
+
+
+
+
+
+
+

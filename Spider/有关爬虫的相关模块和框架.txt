@@ -1,0 +1,42 @@
+urllib 		urlopen是python的标准库，包含数据请求，处理cookie，改变请求头和用户代理的函数，可移植性好，
+		(参考文档：https://docs.python.org/3/library/urllib.html)
+
+requests 	擅长处理复杂的的HTTP请求，cookie，header等内容的第三方库
+		(参考文档:http://cn.python-requests.org/zh_CN/latest/)
+
+beautifulsoup 	通过定位html标签来格式化和组织复杂的网络信息，用简单的python对象展现xml结构信息
+		(参考文档:https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html)
+
+lxml		html解析库
+		(官方相关参考:http://lxml.de/)
+
+selenium	是一个“无头”（headless）浏览器。它会把网站加载到内存并执行页面上的JavaScript，但不会向用户展示网页的图形界面
+
+srcapbookX	浏览器插件，可以把网页下载下来，再通过脚本清洗数据
+		(相关:https://github.com/danny0838/firefox-scrapbook)
+
+selenium IDE	自动化测试工具，可以辅助selenium模块爬虫脚本的书写
+		(相关:http://www.seleniumhq.org/)
+
+phantomJS	无图浏览期，配合selenium使用，同火狐，谷歌等浏览器相比，可以极大的减少爬取时间，加快爬虫的速度
+		(相关:http://phantomjs.org/download.html)
+
+scrapy		目前最热的爬虫框架
+		(教程:http://scrapy-chs.readthedocs.io/zh_CN/0.24/intro/tutorial.html)
+
+pyspiders 	爬虫框架(https://github.com/binux/pyspider)
+
+mysql 		数据库，便于后续的数据可视化
+
+json 		json格式数据的处理模块
+
+csv 		csv格式数据的处理块
+
+
+
+模块安装
+上述介绍的模块一般都能用pip安装，如需源码安装，可自行上网查询，
+
+
+
+
