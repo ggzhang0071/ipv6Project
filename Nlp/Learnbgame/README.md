@@ -1,5 +1,5 @@
-#实现功能
-### python learnbgame [option][contents]
+# 实现功能
+# #python learnbgame [option] [contents]
 ###   option:
 ###       -h 帮助文档
 ###       -i<input text files> -o <output filename,csv form>输入为txt格式文件，输出为csv格式文件
