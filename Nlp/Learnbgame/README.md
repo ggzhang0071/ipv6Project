@@ -7,7 +7,7 @@
 
 .. code:: bash
             $ python learnbgame -h
-            usage: python learnbgame [options] [contensts]
+            usage: python learnbgame [options] 
                         options:
                         -h show this help messsage and exit
                         -i<input text files> -o <output filename,csv form>输入为txt格式文件，输出为csv格式文件
