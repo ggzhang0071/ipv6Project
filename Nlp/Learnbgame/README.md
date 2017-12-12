@@ -5,7 +5,7 @@
             
 -----------------------------
 
-.. code:: bash
+:: bash
             $ python learnbgame -h
             usage: python learnbgame [options] 
                         options:
