@@ -2,7 +2,7 @@
 
             
 -----------------------------            
-.. code:: bash
+
 
     $ python learnbgame -h
      usage: python learnbgame [options] 
