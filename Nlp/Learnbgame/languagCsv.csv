@@ -12,8 +12,8 @@ bg,bulgarian,保加利亚语
 ca,catalan,加泰罗尼亚
 ceb,cebuano,宿务
 ny,chichewa,奇切瓦
-zh-cn,chinese (simplified),简体中文）
-zh-tw,chinese (traditional),中国传统的）
+zh-cn,chinese (simplified),简体中文
+zh-tw,chinese (traditional),繁体中文
 co,corsican,科西嘉
 hr,croatian,克罗地亚
 cs,czech,捷克
@@ -49,7 +49,7 @@ kn,kannada,卡纳达语
 kk,kazakh,哈萨克人
 km,khmer,高棉
 ko,korean,朝鲜的
-ku,kurdish (kurmanji),库尔德人（kurmanji）
+ku,kurdish (kurmanji),库尔德人
 ky,kyrgyz,吉尔吉斯
 lo,lao,老挝
 la,latin,拉丁
@@ -102,5 +102,5 @@ xh,xhosa,科萨
 yi,yiddish,意第绪语
 yo,yoruba,约鲁巴
 zu,zulu,祖鲁
-fil,Filipino,菲律宾
+fil,Filipino,菲律宾语
 he,Hebrew,希伯来语
