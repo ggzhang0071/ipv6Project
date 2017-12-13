@@ -1,3 +1,4 @@
+# 原理相关：http://blog.csdn.net/yingshukun/article/details/53470424
 import execjs  
 import urllib.request     
 
