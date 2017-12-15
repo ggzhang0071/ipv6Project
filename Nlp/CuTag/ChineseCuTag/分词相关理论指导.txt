@@ -1,0 +1,13 @@
+ One-hot Representation
+ 	把每个词表示为一个很长的向量。这个向量的维度是词表大小，其中绝大多数元素为 0，只有一个维度的值为 1，这个维度就代表了当前的词.
+	如果要编程实现的话，用 Hash 表给每个词分配一个编号就可以了
+ 	缺点：词汇鸿沟-任意两个词之间都是孤立的。光从这两个向量中看不出两个词是否有关系
+
+
+
+互联网时代的社会语言学：基于SNS的文本数据挖掘：
+	http://www.matrix67.com/blog/archives/5044
+	相关代码python实现：
+		https://github.com/wyh267/ChineseWordS
+	相关代码c++实现：
+		https://github.com/jannson/wordmaker

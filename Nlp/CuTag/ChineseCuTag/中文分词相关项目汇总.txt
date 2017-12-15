@@ -1,0 +1,290 @@
+origin article link:
+	http://www.jianshu.com/p/8be8f185c198
+
+
+
+中文分词项目总结
+
+
+1）ICTCLAS
+
+最早的中文开源分词项目之一，由中科院计算所的张华平、刘群所开发，采用C/C++编写，算法基于《基于多层隐马模型的汉语词法分析研究》。其中开
+
+源版本为FreeICTCLAS,最新API调用版本为NLPIR/ICTCLAS2014分词系统(NLPIR分词系统前身为2000年发布的
+
+ICTCLAS词法分析系统，从2009年开始，为了和以前工作进行大的区隔，并推广NLPIR自然语言处理与信息检索共享平台，调整命名为NLPIR分
+
+词系统)
+
+FreeICTCLAS源代码地址为：
+
+https://github.com/hecor/ICTCLAS-2009-free
+
+https://github.com/pierrchen/ictclas_plus (ICTCLAS Version 1.0 for Linux）
+
+http://download.csdn.net/detail/shinezlee/1535796
+
+http://www.codeforge.cn/article/106151
+
+NLPIR/ICTCLAS2014 API下载地址为：
+
+http://ictclas.nlpir.org/downloads
+
+其他版本：
+
+(a) 在FreeICTCLAS基础上，由吕震宇老师根据开源版C++改写成的C#版。
+
+下载地址为：
+
+https://github.com/smartbooks/SharpICTCLAS （原版）
+
+https://github.com/geekfivestart/SharpICTCLAS （支持多线程版）
+
+(b) 对ICTCLAS分词系统代码及SharpICTCLAS代码理解可参考:
+
+http://www.cnblogs.com/zhenyulu/articles/653254.html
+
+http://sewm.pku.edu.cn/QA/reference/ICTCLAS/FreeICTCLAS/codes.html
+
+(c) ictclas4j中文分词系统是sinboy在FreeICTCLAS的基础上完成的一个java开源分词项目，简化了原分词程序的复杂度。
+
+下载地址为：
+
+http://sourceforge.net/projects/ictclas4j/
+
+https://code.google.com/p/ictclas4j/
+
+(d) ICTCLAS Python调用
+
+Python下调用NLPIR(ICTCLAS2013)可参考:
+
+http://ictclas.nlpir.org/newsDetail?DocId=382
+
+Python wrapper for ICTCLAS 2015 可参考:
+
+https://github.com/haobibo/ICTCLAS_Python_Wrapper
+
+https://github.com/tsroten/pynlpir （一个外国小哥搞得，还有文档介绍http://pynlpir.rtfd.org）
+
+2）MMSEG
+
+采用Chih-Hao Tsai的MMSEG算法(A Word Identification System for Mandarin Chinese Text Based on Two Variants of the Maximum Matching Algorithm)。MMSeg 算法有两种分词方法：Simple(only forward maximum matching)和Complex(three-word chunk maximum matching and 3 additional rules to solve ambiguities)，都是基于正向最大匹配，Complex 加了四个规则过虑。
+
+源代码下载地址为：
+
+http://technology.chtsai.org/mmseg/
+
+注：
+
+(a) LibMMSeg 是Coreseek.com为Sphinx全文搜索引擎设计的中文分词软件包，其在GPL协议下发行的中文分词法，也是采用Chih-Hao Tsai的MMSEG算法。LibMMSeg 采用C++开发，同时支持Linux平台和Windows平台。
+
+源代码下载地址为：
+
+http://www.coreseek.cn/opensource/mmseg/
+
+(b) friso是使用c语言开发的一个中文分词器，使用流行的mmseg算法实现。支持对UTF-8/GBK编码的切分，绑定了php扩展和sphinx token插件
+
+三种切分模式：(1).简易模式：FMM算法 (2).复杂模式-MMSEG四种过滤算法 (3)检测模式：只返回词库中已有的词条
+
+源代码下载地址为：
+
+https://code.google.com/p/friso/
+
+http://git.oschina.net/lionsoul/friso
+
+(c) MMSEG4J 是基于MMSeg 算法的Java开源中文分词组件，提供lucene和solr 接口
+
+源代码下载地址为：
+
+https://code.google.com/p/mmseg4j/
+
+(d) RMMSeg is written in pure Ruby. RMMSegis an implementation of MMSEG word segmentation algorithm. It is based on two variants of maximum matching algorithms.
+
+源代码下载地址为：
+
+http://rmmseg.rubyforge.org/
+
+(e) rmmseg-cpp is a re-written of the original RMMSeggem in C++, the core part is written in C++ independent of Ruby. It ismuch faster and cosumes much less memory than RMMSeg. The interface of rmmseg-cpp is almost identical to RMMSeg.
+
+源代码下载地址为：
+
+http://rmmseg-cpp.rubyforge.org/
+
+https://github.com/pluskid/rmmseg-cpp/
+
+(f) pymmseg-cpp is a Python interface to rmmseg-cpp.
+
+源代码下载地址为：
+
+https://github.com/pluskid/pymmseg-cpp/
+
+https://code.google.com/p/pymmseg-cpp/
+
+3）IKAnalyzer
+
+IKAnalyzer是一个开源基于java语言开发的轻量级的中文分词工具包。从2006年12月推出1.0版开始，IKAnalyzer已经推出 了3个大版本。最初，它是以开源项目Luence为应用主体的，结合词典分词和文法分析算法的中文分词组件。新版本IKAnalyzer3.0采用了特有的“正向迭代最细粒度切分算法“,已发展为面向Java的公用分词组件，独立于Lucene项目，同时提供了对Lucene的默认优化实现。
+
+源代码下载地址为：
+
+https://code.google.com/p/ik-analyzer/
+
+https://github.com/yozhao/IKAnalyzer
+
+4）FNLP(FudanNLP)
+
+FudanNLP主要是为中文自然语言处理而开发的工具包(现已更名为FNLP)，功能包含信息检索（文本分类、新闻聚类），中文处理（中文分词、词性标注、实体名识别、关键词抽取、依存句法分析 时间短语识别），结构化学习（在线学习、层次分类、聚类）。从功能的角度而言，FNLP与著名的Python自然语言处理工具包NLTK较为类似，但后者对中文处理的能力较差。FNLP采用Java编写，可轻松运行在各种不同的平台之上。
+
+源代码下载地址为：
+
+https://github.com/xpqiu/fnlp/
+
+5）NiuParser
+
+中文句法语义分析系统NiuParser支持中文句子级的自动分词、词性标注、命名实体识别、组块识别、成分句法分析、依存句法分析和语义角色标注七大语言分析技术。所有代码采用C++语言开发，不包含任何其它开源代码。NiuParser系统可以免费用于研究目的，但商业用途需获得商业授权许可。
+
+源代码下载地址为：
+
+http://www.niuparser.com/index.en.html
+
+6) LTP
+
+语言技术平台（Language Technology Platform，LTP）是提供包括中文分词、词性标注、命名实体识别、依存句法分析、语义角色标注等丰富、 高效、精准的自然语言处理技术。LTP制定了基于XML的语言处理结果表示，并在此基础上提供了一整套自底向上的丰富而且高效的中文语言处理模块（包括词法、句法、语义等6项中文处理核心技术），以及基于动态链接库（Dynamic Link Library, DLL）的应用程序接口、可视化工具，并且能够以网络服务（Web Service）的形式进行使用。
+
+源代码下载地址为：
+
+https://github.com/HIT-SCIR/ltp
+
+注：
+
+(a) LTP的分词模块(LTP-CWS)基于结构化感知器（Structured
+
+Perceptron）算法构建，支持用户自定义词典，适应不同用户的需求；另外还新增了个性化（增量式）训练功能，用户可以根据自己的实际需求，如对新
+
+领域的文本进行分词等，自行标注少量句子的分词结果（比如对LTP分词结果的修正），LTP分词模块可以重新训练一个更好应对新领域的分词器，进一步提高
+
+新领域上分词的准确率。
+
+源代码下载地址为：
+
+https://github.com/HIT-SCIR/ltp-cws
+
+(b) pyltp是LTP的Python封装
+
+源代码下载地址为：
+
+https://github.com/HIT-SCIR/pyltp
+
+7）Ansj中文分词
+
+基于google语义模型+条件随机场模型的中文分词的java实现，实现了.中文分词. 中文姓名识别 . 用户自定义词典。Ansj是基于ictclas工具的java实现，基本上重写了所有的数据结构和算法。使用开源版的ictclas词典.并且进行了部分的人工优化。
+
+源代码下载地址为：
+
+https://github.com/NLPchina/ansj_seg
+
+8) jieba中文分词
+
+jieba"结巴"分词为Python 中文分词组件，支持三种分词模式：(a)精确模式，试图将句子最精确地切开，适合文本分析；(b)全模式，把句子中所有的可以成词的词语都扫描出来, 速度非常快，但是不能解决歧义；(c)搜索引擎模式，在精确模式的基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。另外jieba分词支持繁体分词和自定义词典。
+
+算法主要包括：基于Trie树结构实现高效的词图扫描，生成句子中汉字构成的有向无环图（DAG)；采用了记忆化搜索实现最大概率路径的计算, 找出基于词频的最大切分组合；对于未登录词，采用了基于汉字位置概率的模型，使用了Viterbi算法。
+
+源代码下载地址为：
+
+https://github.com/fxsjy/jieba
+
+注：
+
+(a)模型数据生成，参见：
+
+https://github.com/fxsjy/jieba/issues/7
+
+(b)CppJieba是"结巴"中文分词的C++版本，代码细节详见：
+
+https://github.com/yanyiwu/cppjieba
+
+(c) cppjiebapy is a wrap for cppjieba by swig. 若想使用python来调用cppjieba,可查阅：
+
+https://github.com/jannson/cppjiebapy
+
+(d) jieba分词学习笔记，参见：
+
+http://segmentfault.com/a/1190000004061791
+
+9)HanLP
+
+HanLP是由一系列模型与算法组成的Java汉语言处理工具包，提供中文分词、词性标注、命名实体识别、依存句法分析、关键词提取、自动摘要、短语提取、拼音、简繁转换等完备的功能。CRFSegment支持自定义词典，自定义词典的优先级高于核心词典。
+
+源代码下载地址为：
+
+http://hanlp.linrunsoft.com/
+
+https://github.com/hankcs/HanLP
+
+10)BosonNLP
+
+BosonNLP是一家初创公司提供的API SDK调用接口。功能包括：Tokenization and part of speech
+
+tagging, named-entity recognition, tokenization and compute word weight,
+
+automatic detection of opinions embodied in text, work out the
+
+grammatical structure of sentences, categorization
+
+the given articles, Get relative words.
+
+API下载地址为：
+
+https://github.com/liwenzhu/bosonnlp
+
+11)Pullword在线抽词
+
+Pullword是永久免费的基于深度学习的中文在线抽词
+
+API调用Pullword，包含python,R等语言，参见：
+
+http://api.pullword.com/
+
+12)sogo在线分词
+
+sogo在线分词采用了基于汉字标注的分词方法，主要使用了线性链链CRF（Linear-chain CRF）模型。词性标注模块主要基于结构化线性模型（Structured Linear Model）
+
+在线使用地址为：
+
+http://www.sogou.com/labs/webservice/
+
+13)THULAC
+
+THULAC（THU Lexical Analyzer for Chinese）是清华开源的一套中文词法分析工具包，主要包括中文分词和词性标注功能。该工具包使用了基于词图（word lattice）的重排序算法(re-ranking method).
+
+源代码下载地址为：
+
+http://thulac.thunlp.org
+
+最后的彩蛋：
+
+(1) CRF分词训练工具：
+
+CRFsuite (http://www.chokkan.org/software/crfsuite/)
+
+CRF++  (http://taku910.github.io/crfpp/)
+
+wapiti (https://github.com/Jekub/Wapiti) or (https://wapiti.limsi.fr/)
+
+chinesesegmentor (https://github.com/fancyerii/chinesesegmentor) or  (http://fancyerii.github.io/sgdcrf/index.html)
+
+CRF decoder 包含CRF++软件包中分词解码器部分，简化了CRF++复杂代码结构，清除了分词解码器不需要的代码，大大提高了分词解码器的可读性和可懂度。 下载地址：http://sourceforge.net/projects/crfdecoder/
+
+(2) 中文分词器分词效果评估对比，参见：
+
+https://github.com/ysc/cws_evaluation
+
+(3)中文词典开源项目（CC-CEDICT）
+
+一份以汉语拼音为中文辅助的汉英辞典,可用于中文分词使用，而且不存在版权问题。Chrome中文版就是使用的这个词典进行中文分词的。
+
+数据及文档下载地址为：
+
+http://www.mdbg.net/chindict/chindict.php?page=cedict
+
+http://cc-cedict.org/wiki/
+
