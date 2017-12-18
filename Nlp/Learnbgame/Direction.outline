@@ -1,1 +1,37 @@
+基本流程：
+  从PDF文件提取contents
+                       ————>将contens输入到学习模型进行训练，并反馈————>建立PDF文件库不断训练模型————>
+  建立学习模型
+  
+  
+  相关工作：
+        1.PDF文档库的建立
+        2.相关的学习模型的脚本开发
+        3.相关的读取PDF文档的方式的脚本的开发
+        4.从PDF中提取的内容，还需要经过相应的自然语言处理
+        5.因为项目的开发趋向于对中文的分析，此前关于自然语言处理的大量工作都是关于英文，所以需要建立一个英文转中文的接口
+        6.
+  
+  
+  关于PDF文件的处理：
+        peepdf:Python 编写的PDF文件分析工具，可以帮助检测恶意的PDF文件
+        
+        Didier Stevens' PDF tools:析，识别和创建 PDF 文件(包含PDFiD，pdf-parser，make-pdf和 mPDF)
+        
+        Opaf: 开放 PDF 分析框架，可以将 PDF 转化为 XML 树从而进行分析和修改
+        
+        Origapy: Ruby 工具Origami的 Python 接口，用于审查 PDF 文件
 
+        pyPDF2: Python PDF 工具包包含：信息提取，拆分，合并，制作，加密和解密等等
+
+        PDFMiner:从 PDF 文件中提取文本
+
+        python-poppler-qt4: Python 写的 Poppler PDF 库，支持 Qt4
+
+关于英文转中文的接口：
+        googletrans模块
+        
+关于机器学习相关模型：
+        #有google的tensorflow，但需要操作系统为64bit
+        
+        
