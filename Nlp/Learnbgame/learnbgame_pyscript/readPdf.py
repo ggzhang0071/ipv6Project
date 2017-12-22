@@ -1,6 +1,3 @@
-# coding:utf-8
-""" PDF对象内容"""
-
 import random
 
 from pdfminer.layout import LAParams, LTChar, LTTextBoxHorizontal
