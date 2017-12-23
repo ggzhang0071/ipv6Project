@@ -5,6 +5,7 @@
 
 
 # ipv6Project
-关于赛尔网ipv6项目的
+这是关于“第三届下一代互联网技术创新大赛”项目的一些成果，比赛主要围绕IPv6网进行，比赛终有结束的时候，但是项目的仍在继续，学习无止境。
 
+# 以下是关于IPv6网
 ![](https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=0e7c794b3dfae6cd18b9a3336eda6441/eaf81a4c510fd9f94e7dcd152d2dd42a2834a460.jpg)
