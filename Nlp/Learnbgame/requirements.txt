@@ -1,1 +1,4 @@
+chatterbot
 googletrans
+pdfminer3k
+scrapy
