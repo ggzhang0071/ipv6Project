@@ -9,15 +9,22 @@
 -----------------------------            
 
 
-    $ python learnbgame -h
-     usage: python learnbgame [options] 
-     
-     python learnbgame as a command line tool
-     
-     options:
-          -h show this help messsage and exit
-          -i <input text files> -o <output filename,csv form>输入为txt格式文件，输出为csv格式文件
-          -p 提取数据从PDF文件的库../Data/PDF，并训练
+    $ python learnbgame.py -h
+     usage: python learnbgame.py [option]
+
+     learnbgame help document
+
+     optional arguments:
+       -h, --help       show this help message and exit
+       -txt <filename>  specify input filenamen with txt format
+       -pdf <filename>  specify input filenamen with pdf format
+       -csv <filename>  specify output filenamen with csv format
+
+     And that’s how you‘d use learnbgame
+
+ 
+          输入为txt格式文件，输出为csv格式文件
+          提取数据从PDF文件的库../Data/PDF，并训练
             
 
 
