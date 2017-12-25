@@ -34,8 +34,7 @@
           
 # we are Internet  
 
-![](http://static.open-open.com/news/uploadImg/20150316/20150316084735_935.gif)
-![](http://img2.imgtn.bdimg.com/it/u=1341120858,540027728&fm=11&gp=0.jpg)
+
 
 ![](http://upload.chinaz.com/2015/0721/1437441272917.gif)
 
