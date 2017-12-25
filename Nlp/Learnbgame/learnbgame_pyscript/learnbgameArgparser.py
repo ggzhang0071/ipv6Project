@@ -1,10 +1,10 @@
 import argparse
 
 
-
+version = 1.0
 parser = argparse.ArgumentParser(
         prog='learnbgame', 
-        usage="python learnbgame.py [option]",# -i <input filename> -o <output filename>' 
+        usage="python learnbgame.py [option]", 
         description="learnbgame help document", 
         epilog="And that’s how you‘d use learnbgame", 
         parents=[], 
@@ -21,26 +21,47 @@ parser = argparse.ArgumentParser(
 
 
 parser.add_argument(
-	'-txt',
-	metavar='<input filename>',
+	'--txt',
+	metavar='<filename>',
 	dest='txtf',
 	help="specify input filenamen with txt format")
 parser.add_argument(
-	'-pdf',
-	metavar='<input filename>',
+	'--pdf',
+	metavar='<filename>',
 	dest='pdff',
 	help="specify input filenamen with pdf format")
 parser.add_argument(
-	'-csv',
-	metavar='<output filename>',
+	'--csv',
+	metavar='<filename>',
 	dest='csvf',
 	help="specify output filenamen with csv format")
+parser.add_argument(
+        '--docx',
+        metavar='<filename>',
+        dest='docxf',
+        help="specify input filenamen with docx format")
+parser.add_argument(
+        '-version', 
+        action='version',
+         version='%(prog)s {0}'.format(version))
+parser.add_argument(
+        '-translate',
+        metavar='',
+        dest='tran',
+        help="Achieve translation feature")
+parser.add_argument(
+        '-keyword',
+        metavar='',
+        dest='keyword',
+        help="Achieve search keywords feature")
+
+
     
     
 
 args = parser.parse_args()  
 
 
-txtf = args.txtf
-csvf = args.csvf
-print(txtf,csvf)  
+#txtf = args.txtf
+#csvf = args.csvf
+  

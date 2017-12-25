@@ -1,15 +1,19 @@
 
 import csv
-import argparse 
+import sys
 from googletrans import Translator
-from learnbgameArgparser import args
+from learnbgameArgparser import args,parser
 import txtTranCsv
 
 
 def main(): 
-    #print(args)
+    
     # 输入为文件txt,输出为文件csv
-    txtTranCsv.txTranCsv(args.txtf,args.csvf)
+    if len(sys.argv) < 2:
+    	parser.print_help()
+    else:
+    	
+    	txtTranCsv.txTranCsv(args.txtf,args.csvf)
 
 
 
