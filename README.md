@@ -1,4 +1,6 @@
 ![IPv6](https://img.shields.io/badge/ipv6-go!-green.svg)
+![http2](https://img.shields.io/badge/http2-go!-green.svg)
+
 ---
 ![IPv6](https://www.ipv6ready.org/images/logo.jpg)
 ![python3](https://www.python.org/static/community_logos/python-logo.png)
