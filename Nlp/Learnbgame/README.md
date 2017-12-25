@@ -35,6 +35,7 @@
 ---------------------------
 # 类似项目
             https://github.com/CW0606/parsepdf
+            https://github.com/bat9r/KW
 
 
 
