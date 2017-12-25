@@ -1,4 +1,6 @@
 chatterbot
+docx2txt
 googletrans
 pdfminer3k
+PyQt5
 scrapy
