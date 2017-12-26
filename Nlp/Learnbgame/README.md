@@ -37,6 +37,7 @@
 # 类似项目
             https://github.com/CW0606/parsepdf
             https://github.com/bat9r/KW
+            https://github.com/zake7749/PTT-Chat-Generator
 
 
 
