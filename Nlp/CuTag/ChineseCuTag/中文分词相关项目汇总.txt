@@ -260,6 +260,9 @@ THULAC（THU Lexical Analyzer for Chinese）是清华开源的一套中文词法
 
 http://thulac.thunlp.org
 
+14）中研院中文分词：
+http://ckipsvr.iis.sinica.edu.tw/
+
 最后的彩蛋：
 
 (1) CRF分词训练工具：
