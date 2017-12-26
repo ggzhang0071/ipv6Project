@@ -9,3 +9,5 @@
 ### 相关 https://github.com/bat9r/KW
 
 ## 聊天机器人相关：[ChatterBot](https://github.com/gunthercox/ChatterBot),[Chatbot](https://github.com/zake7749/Chatbot),[ai-chatbot-framework](https://github.com/alfredfrancis/ai-chatbot-framework),[pyro](https://github.com/uber/pyro)
+
+### word2vec 是基于非监督式学习，训练集一定要越大越好，语料涵盖的越全面，训练出来的结果也会越漂亮
