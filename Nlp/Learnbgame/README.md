@@ -34,10 +34,7 @@
                         
 
 ---------------------------
-# 类似项目
-            https://github.com/CW0606/parsepdf
-            https://github.com/bat9r/KW
-            https://github.com/zake7749/PTT-Chat-Generator
+# 类似项目:[parsepdf](https://github.com/CW0606/parsepdf),[KW](https://github.com/bat9r/KW),[PTT-Chat-Generator](https://github.com/zake7749/PTT-Chat-Generator),[OpenCC](https://github.com/BYVoid/OpenCC)
 
 
 
