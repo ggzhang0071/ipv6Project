@@ -6,7 +6,7 @@
 
 ## PDF解析：https://pypi.python.org/pypi/pdfminer3k/
 
-### 相关 https://github.com/bat9r/KW
+### 相关 [KW](https://github.com/bat9r/KW),[OpenCC](https://github.com/BYVoid/OpenCC)
 
 ## 聊天机器人相关：[ChatterBot](https://github.com/gunthercox/ChatterBot),[Chatbot](https://github.com/zake7749/Chatbot),[ai-chatbot-framework](https://github.com/alfredfrancis/ai-chatbot-framework),[pyro](https://github.com/uber/pyro)
 
