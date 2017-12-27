@@ -4,3 +4,6 @@
       
       http://zake7749.github.io/2016/08/28/word2vec-with-gensim/
       https://github.com/zake7749/Chatbot#%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C
+      
+      
+中文分词系统： 基于Lucene为应用主体开发的[IKAnalyzer]()中文分词系统、[庖丁]()中文分词系统，纯C语言开发的简易中文分词系统[SCWS]()，中国科学院计算技术研究所推出的汉语词法分析系统[ICTCLAS]()，哈尔滨工业大学信息检索研究室研究的[IRLAS]()
