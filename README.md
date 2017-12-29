@@ -1,6 +1,7 @@
 ![IPv6](https://img.shields.io/badge/ipv6-go!-green.svg)
 ![http2](https://img.shields.io/badge/http2-go!-green.svg)
 ![build](https://camo.githubusercontent.com/c84cbbf389a8afa4914ab31bac3d09d14a6c21dc/68747470733a2f2f7365637572652e7472617669732d63692e6f72672f77697265736572766963652f6373766b69742e737667)
+![up-to-date](https://camo.githubusercontent.com/d93b8d44bdceed664df7582e316edbbb4f14f7ad/68747470733a2f2f67656d6e617369756d2e636f6d2f77697265736572766963652f6373766b69742e737667)
 
 ---
 ![IPv6](https://www.ipv6ready.org/images/logo.jpg)
