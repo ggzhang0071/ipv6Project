@@ -1,9 +1,12 @@
 
 import csv
+import os
 import sys
 from googletrans import Translator
 from learnbgameArgparser import args,parser
 import txtTranCsv
+reload(sys)  
+sys.setdefaultencoding("utf-8")
 
 
 def main(): 
@@ -12,8 +15,9 @@ def main():
     if len(sys.argv) < 2:
     	parser.print_help()
     else:
-    	
-    	txtTranCsv.txTranCsv(args.txtf,args.csvf)
+    	if args.txtf and args.csvf and args.tran:
+    		txtTranCsv.txTranCsv(args.txtf,args.csvf)
+
 
 
 
@@ -22,8 +26,14 @@ def main():
 if __name__ == '__main__':
     main()
 
-        
-        
+
+  
+  
+ 
+  
+ 
+
+  
 
 
 

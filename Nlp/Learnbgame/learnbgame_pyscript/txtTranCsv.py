@@ -1,8 +1,11 @@
 import csv 
+import os 
 from googletrans import Translator
 from learnbgameArgparser import args
 from languageHash import LANGUAGES
 
+
+nowdir = os.getcwd() #当前目录
 
 def txTranCsv(txtf,csvf):
     filro = open(txtf,'r')
@@ -19,14 +22,36 @@ def txTranCsv(txtf,csvf):
             dst = lan
             transcontent = translator.translate(contents,dest=dst,src=src)
             print(transcontent.text,'----',lan)
-            filwo.write(transcontent.text+'\n')
+            csvWriter = csv.writer(filwo)
+            csvWriter.writerow([c for c in transcontent.text.split('\n')])
+            #filwo.write(transcontent.text+'\n')
     filro.close()  
     filwo.close()
+
+def inputuptuo(intuo):    
+    # '\User\Desktop\test.txt'-->['\User\Desktop','test.txt']    
+    (dirName,fileName) = os.path.split(intuo)
+    if dirName:  # 完整路径
+        fileDirName = intuo
+        dirnNme = dirName 
+    else: # 只给一个文件名['','test.txt']
+        fileDirName = nowdir + '/' + intuo
+        dirName = nowdir
+    # 'test.txt' -->['test','.txt']
+    (shortname,extension) = os.path.splitext(fileName) # 以最后一个点作为分割标志
+
+
 
 
 def main():
     txTranCsv(args.txtf,args.csvf)
 
 
+
+
 if __name__ == '__main__':
     main()
+
+
+
+

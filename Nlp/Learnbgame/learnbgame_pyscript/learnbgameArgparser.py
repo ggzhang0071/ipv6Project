@@ -1,7 +1,11 @@
 import argparse
+import os 
+import sys 
 
 
-version = 1.0
+__version__ = 1.0
+nowdir = os.getcwd() #当前目录
+
 parser = argparse.ArgumentParser(
         prog='learnbgame', 
         usage="python learnbgame.py [option]", 
@@ -31,6 +35,11 @@ parser.add_argument(
 	dest='pdff',
 	help="specify input filenamen with pdf format")
 parser.add_argument(
+    '--ppt',
+    metavar='<filename>',
+    dest='pptf',
+    help="specify input filenamen with ppt format")
+parser.add_argument(
 	'--csv',
 	metavar='<filename>',
 	dest='csvf',
@@ -43,7 +52,7 @@ parser.add_argument(
 parser.add_argument(
         '-version', 
         action='version',
-         version='%(prog)s {0}'.format(version))
+         version='%(prog)s {0}'.format(__version__))
 parser.add_argument(
         '-translate',
         metavar='',
