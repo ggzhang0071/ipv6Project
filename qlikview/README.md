@@ -13,3 +13,11 @@
 |资助生学习成绩分析|1.对比各学院、专业资助生学习成绩与普通学生学习成绩，可以针对某些学习成绩变化很大的的资助生进行询问以帮助|1.入学年份≠年级      2.信息量较少||
 |资助生|1.对比各学院、专业资助生学习成绩与普通学生一卡通消费，可以针对某些差异较大的资助生进行不同情况下的处理|1.入学年份≠年级     2.信息量较少||
 |MOOC课程分析||||
+
+
+
+
+![](https://github.com/ggzhang0071/ipv6Project/blob/master/qlikview/mooc%C2%BF%C3%8E%C2%B3%C3%8C%C2%B7%C3%96%C3%8E%C3%B6.png?raw=true)
+![](https://github.com/ggzhang0071/ipv6Project/blob/master/qlikview/%C3%8C%C3%A5%C3%96%C3%8A%C3%97%C3%9B%C2%BA%C3%8F%C2%B7%C3%96%C3%8E%C3%B6.png?raw=true)
+![](https://github.com/ggzhang0071/ipv6Project/blob/master/qlikview/%C3%8D%C2%BC%C3%8A%C3%A9%C2%BD%C3%A8%C3%94%C3%84%C3%90%C3%85%C3%8F%C2%A2%C2%B7%C3%96%C3%8E%C3%B6.png?raw=true)
+![](https://github.com/ggzhang0071/ipv6Project/blob/master/qlikview/%C3%91%C2%A7%C3%89%C3%BA%C2%BB%C3%B9%C2%B1%C2%BE%C3%90%C3%85%C3%8F%C2%A2%C2%B7%C3%96%C3%8E%C3%B6.png?raw=true)
