@@ -12,4 +12,8 @@
 
 [blender-chemicals](https://github.com/patrickfuller/blender-chemicals)
 
+[Chemistry](https://github.com/Dannnno/Chemistry)
+
+[CAOS](https://github.com/PyCAOS/CAOS)
+
 
