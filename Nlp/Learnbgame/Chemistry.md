@@ -1,3 +1,5 @@
+[open-smiles](http://opensmiles.org/spec/open-smiles.html):open smiles标准
+
 [chemlab](https://github.com/chemlab/chemlab)
 
 [PubChemPy](https://github.com/mcs07/PubChemPy)
