@@ -2,4 +2,4 @@
 
 [scikit](https://github.com/biocore/scikit-bio)
 
-[](https://github.com/jorvis/biocode)
+[biocode](https://github.com/jorvis/biocode)
