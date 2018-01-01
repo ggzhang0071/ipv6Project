@@ -16,4 +16,6 @@
 
 [CAOS](https://github.com/PyCAOS/CAOS)
 
+[rdkit](https://github.com/rdkit/rdkit)
+
 
