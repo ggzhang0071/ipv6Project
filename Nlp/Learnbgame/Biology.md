@@ -7,3 +7,5 @@
 [biopandas](https://github.com/rasbt/biopandas)
 
 [bioservices](https://github.com/cokelaer/bioservices)
+
+[bio-research](https://github.com/qiangsiwei/bio-research)
