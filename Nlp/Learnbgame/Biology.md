@@ -9,3 +9,7 @@
 [bioservices](https://github.com/cokelaer/bioservices)
 
 [bio-research](https://github.com/qiangsiwei/bio-research)
+
+[ChemTS](https://github.com/tsudalab/ChemTS)
+
+[chainer-chemistry](https://github.com/pfnet-research/chainer-chemistry)
