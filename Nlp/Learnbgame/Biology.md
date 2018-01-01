@@ -1,5 +1,7 @@
 [biopython](https://github.com/biopython/biopython)
 
-[scikit](https://github.com/biocore/scikit-bio)
+[scikit-bio](https://github.com/biocore/scikit-bio)
 
 [biocode](https://github.com/jorvis/biocode)
+
+[biopandas](https://github.com/rasbt/biopandas)
