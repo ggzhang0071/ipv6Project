@@ -1,3 +1,4 @@
+![](http://global.qlik.com/images/interface/chrome/logo.png)
 #  这是关于数据分析的成果
 ###  使用[qlikview](https://www.qlik.com)
 
