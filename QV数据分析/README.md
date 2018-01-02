@@ -15,7 +15,7 @@
 |[资助生学习成绩分析]()|1.对比各学院、专业资助生学习成绩与普通学生学习成绩，可以针对某些学习成绩变化很大的的资助生进行询问以帮助|1.入学年份≠年级      2.信息量较少||
 |[MOOC课程分析](https://github.com/ggzhang0071/ipv6Project/tree/master/QV%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90#mooc%E8%AF%BE%E7%A8%8B%E5%88%86%E6%9E%90)||||
 
-
+------------------
 # 演示
 #### MOOC课程分析
 ![](https://github.com/ggzhang0071/ipv6Project/blob/master/QV%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/MOOC%E8%AF%BE%E7%A8%8B%E5%88%86%E6%9E%90.png?raw=true)
