@@ -13,3 +13,5 @@
 [ChemTS](https://github.com/tsudalab/ChemTS)
 
 [chainer-chemistry](https://github.com/pfnet-research/chainer-chemistry)
+
+[academic.oup](https://academic.oup.com/nar/article/28/1/235/2384399)
