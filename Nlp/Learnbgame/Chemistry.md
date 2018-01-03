@@ -22,4 +22,6 @@
 
 [openbabel](https://github.com/openbabel/openbabel/tree/master/scripts/python)
 
+[hartleygroup](http://blog.hartleygroup.org/)
+
 
