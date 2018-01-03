@@ -20,4 +20,6 @@
 
 [rdkit](https://github.com/rdkit/rdkit)
 
+[openbabel](https://github.com/openbabel/openbabel/tree/master/scripts/python)
+
 
