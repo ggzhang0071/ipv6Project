@@ -24,4 +24,8 @@
 
 [hartleygroup](http://blog.hartleygroup.org/)
 
+[chemspider](http://www.chemspider.com/)
+
+[blender.freemovies.co.uk](http://blender.freemovies.co.uk/chemistry/)
+
 
