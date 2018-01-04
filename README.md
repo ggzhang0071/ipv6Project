@@ -20,7 +20,8 @@
 *   数据的获取————爬虫
 *   自然语言处理
 *   数据的处理————降噪
-*   ...
+*   QV数据分析
+*         .....
 
 # 算法的python实现
 ### https://github.com/search?l=Python&o=desc&q=%E7%AE%97%E6%B3%95&s=stars&type=Repositories&utf8=%E2%9C%93
