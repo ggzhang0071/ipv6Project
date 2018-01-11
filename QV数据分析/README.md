@@ -19,8 +19,7 @@
 
 ------------------
 # 演示
-#### MOOC课程分析
-![](https://github.com/ggzhang0071/ipv6Project/blob/master/QV%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/MOOC%E8%AF%BE%E7%A8%8B%E5%88%86%E6%9E%90.png?raw=true)
+
 
 ![]()
 #### 图书借阅信息分析
