@@ -23,11 +23,7 @@
 *   QV数据分析
 *         .....
 
-# 算法的python实现
-### https://github.com/search?l=Python&o=desc&q=%E7%AE%97%E6%B3%95&s=stars&type=Repositories&utf8=%E2%9C%93
 
-# 实例参考
-### https://github.com/donnemartin/data-science-ipython-notebooks
 
 
 # 以下是关于IPv6网
