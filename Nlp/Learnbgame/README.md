@@ -34,7 +34,8 @@
                         
 
 ---------------------------
-# 类似项目:[parsepdf](https://github.com/CW0606/parsepdf),[KW](https://github.com/bat9r/KW),[PTT-Chat-Generator](https://github.com/zake7749/PTT-Chat-Generator),[opencc-python](https://github.com/lepture/opencc-python)
+# 类似项目:[parsepdf](https://github.com/CW0606/parsepdf),[KW](https://github.com/bat9r/KW),[PTT-Chat-Generator](https://github.com/zake7749/PTT-Chat-Generator),[opencc-python](https://github.com/lepture/opencc-python),[newspaper
+](https://github.com/codelucas/newspaper)
 
 
 
