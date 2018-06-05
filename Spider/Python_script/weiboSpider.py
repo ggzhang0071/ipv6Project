@@ -12,7 +12,7 @@ from lxml import etree
 
 
 class Weibo:
-    cookie = {"Cookie": "_T_WM=94a3617a6766b9eb86ffe4a66879c0ec; SUB=_2A2506dzwDeRhGeNJ61oX-CnPyT2IHXVUFeS4rDV6PUJbkdANLRbCkW1jkIon8spQoF5P77z2HntEecYHPg..; SUHB=0jBIv49qncZiOF; SCF=AlDBuwTeLYRKYpRp4QhP8HgeS3JDSRJR-uJ8AqoZ86k9y7yjkqL6WChVmTelxeNyfYtsP76PsJMyuN-kHtX5oNI.; SSOLoginState=1508748448"}  # 将your cookie替换成自己的cookie
+    cookie = {"Cookie": "your cookie"}  # 将your cookie替换成自己的cookie
 
     # Weibo类初始化
     def __init__(self, user_id, filter=0):
