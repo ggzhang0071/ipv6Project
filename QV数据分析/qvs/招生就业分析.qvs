@@ -1,0 +1,174 @@
+﻿///$tab Main
+//Binary 招生就业分析.qvw;
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='¥#,##0.00;¥-#,##0.00';
+SET TimeFormat='h:mm:ss';
+SET DateFormat='YYYY/M/D';
+SET TimestampFormat='YYYY/M/D h:mm:ss[.fff]';
+SET MonthNames='一月;二月;三月;四月;五月;六月;七月;八月;九月;十月;十一月;十二月';
+SET DayNames='周一;周二;周三;周四;周五;周六;周日';
+
+
+就业分析:
+LOAD 学号 as 学号, 
+//     left(学号,2) as 年级,
+     学院 as 学院_就业, 
+//     姓名, 
+     毕业去向, 
+//     单位名称, 
+     //扩展项5, 
+//     专业, 
+//     学历, 
+//     性别, 
+//     生源地区, 
+     家庭地址, 
+     毕业选择, 
+     来源省份, 
+//     学号文本, 
+     家庭状况
+//     中图分类号, 
+//     主键码, 
+//     借书, 
+//     包括图书种类, 
+//     还书, 
+//     时间差
+FROM
+就业分析.qvd
+(qvd);
+Inner join
+
+LOAD 学号, 
+     平均成绩等级
+FROM
+学生平均学习成绩等级.qvd
+(qvd);
+
+
+Inner Join
+LOAD 
+     学号, 
+//     考生号, 
+//     身份证号, 
+//     学院, 
+     专业, 
+//     学生层次, 
+//     学科门类, 
+//     年级, 
+//     入学年份, 
+//     班级编号, 
+     性别 as 性别_学生基本信息
+//     民族, 
+//     政治面貌, 
+//     出生日期, 
+//     籍贯, 
+//     学制, 
+//     培养方式, 
+//     招生类别, 
+//     高考总分, 
+//     省直辖市
+FROM
+学生基本信息.qvd
+(qvd);
+
+
+
+
+成绩取得类型:
+LOAD * INLINE [
+    取得方式, 取得名称
+    1, 初修
+    2, 重修
+    3, 补考
+    4,
+];
+
+毕业选择类型:
+LOAD * INLINE [
+    毕业选择, 就业标示
+    0, 参加工作
+    1, 升学
+    2, 出国
+    3, 待业
+];
+//
+//
+家庭状况:
+LOAD * INLINE [
+    家庭状况, 家庭状况标示
+    0, 农村
+    1, 城镇
+ 
+];
+
+
+
+
+///$tab 2015新生
+招生计划:
+
+LOAD 专业, 
+     科类, 
+     计划人数
+FROM
+[2015招生计划1.xlsx]
+(ooxml, embedded labels, table is Sheet1);
+
+
+学生基本信息:
+LOAD
+       学号, 
+     考生号 as 高考考生号, 
+//     身份证号, 
+     学院, 
+     专业, 
+//     学生层次, 
+//     学科门类, 
+//     年级, 
+//     入学年份, 
+//     班级编号, 
+//     性别, 
+//     民族, 
+//     政治面貌, 
+//     出生日期, 
+     省直辖市1 as 生源地, 
+//     学制, 
+//     培养方式, 
+//     招生类别, 
+     高考总分
+//     省直辖市
+FROM
+学生基本信息.qvd
+(qvd);
+
+
+inner join
+LOAD 
+//     PKEY, 
+//     XSLB, 
+//     XSLBM, 
+     ZYH as 专业编号, 
+     ZYMC as 专业名称_2015级
+//     ZYJC, 
+//     ZYYWMC, 
+//     ZYFXH, 
+//     YXSH, 
+//     XZ, 
+//     XKMLM, 
+//     BZKZYM, 
+//     YJSZYM, 
+//     JLNY, 
+//     QSXQ, 
+//     GXSJ, 
+//     BZKZYMC
+FROM
+专业表.qvd
+(qvd);
+
+Load 
+专业名称_2015级,
+Avg(高考总分) as 各专业高考平均分
+Resident 学生基本信息 Group By 专业名称_2015级;
+

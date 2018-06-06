@@ -1,0 +1,111 @@
+﻿///$tab Main
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='¥#,##0.00;¥-#,##0.00';
+SET TimeFormat='h:mm:ss';
+SET DateFormat='YYYY/M/D';
+SET TimestampFormat='YYYY/M/D h:mm:ss[.fff]';
+SET MonthNames='1月;2月;3月;4月;5月;6月;7月;8月;9月;10月;11月;12月';
+SET DayNames='周一;周二;周三;周四;周五;周六;周日';
+
+难考的课程:
+LOAD 
+//     学号, 
+//     学年, 
+//     学期, 
+//     课程代码, 
+     课程名称 as  难考的课程名称, 
+//     课程属性, 
+//     课程性质, 
+//     课程类别, 
+     avg(考试成绩) as 难考的科目成绩
+//     取得学分
+FROM
+学生成绩信息.qvd
+(qvd) Group by 课程名称;
+
+
+
+学生平均学习成绩:
+LOAD 学号, 
+平均成绩
+
+FROM
+学生平均学习成绩.qvd
+(qvd) Where len(学号)>=12;
+
+Left Join
+LOAD 学号, 
+     学院   
+FROM
+学生基本信息.qvd
+(qvd);
+
+学霸学习课程:
+LOAD
+ 学院,
+ max(平均成绩) as 学霸平均成绩
+ 
+ Resident 学生平均学习成绩 Group by 学院;
+ 
+Left Join
+ LOAD
+    学号  as  学霸学号,
+    平均成绩 as 学霸平均成绩
+    
+Resident 学生平均学习成绩;
+left Join
+LOAD 
+     学号 as 学霸学号, 
+//     学年, 
+//     学期, 
+//     课程代码, 
+     课程名称 as  学霸课程名称, 
+//     课程属性, 
+//     课程性质, 
+//     课程类别, 
+     考试成绩 as 学霸考试成绩
+//     取得学分
+FROM
+学生成绩信息.qvd
+(qvd);
+
+ // 学渣各课程得分
+ NoConcatenate
+ 学渣学习课程:
+ LOAD
+  学院,
+ min(平均成绩) as 学渣平均成绩
+
+ Resident 学生平均学习成绩 Group by 学院;
+ Left Join
+ LOAD
+    学号  as 学渣学号,
+    平均成绩  as 学渣平均成绩
+ Resident 学生平均学习成绩;
+ left Join
+LOAD 
+     学号 as 学渣学号, 
+//     学年, 
+//     学期, 
+//     课程代码, 
+     课程名称  as 学渣课程名称,
+//     课程属性, 
+//     课程性质, 
+//     课程类别, 
+     考试成绩 as 学渣考试成绩
+//     取得学分
+FROM
+学生成绩信息.qvd
+(qvd) ;
+
+//DROP Table  学生平均学习成绩;
+
+
+
+    
+
+
+

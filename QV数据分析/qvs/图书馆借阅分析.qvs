@@ -1,0 +1,49 @@
+﻿///$tab Main
+Binary 学生基本信息导入.qvw;
+
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='¥#,##0.00;¥-#,##0.00';
+SET TimeFormat='h:mm:ss';
+SET DateFormat='YYYY/M/D';
+SET TimestampFormat='YYYY/M/D h:mm:ss[.fff]';
+SET MonthNames='1月;2月;3月;4月;5月;6月;7月;8月;9月;10月;11月;12月';
+SET DayNames='周一;周二;周三;周四;周五;周六;周日';
+
+Right Join
+图书借阅信息:
+LOAD 主键码, 
+     中图分类号, 
+     操作类型, 
+     操作类型1, 
+     条形码, 
+//     登录号, 
+     读者条码 as 学号, 
+      if(InMonths(6,处理时间,date('20'&(left(读者条码,2)+1)&'/3/1'),0,3),'第二学期',
+     if(InMonths(6,处理时间,date('20'&(left(读者条码,2)+1)&'/9/1'),0,3),'第三学期',if(InMonths(6,处理时间,date('20'&(left(读者条码,2)+2)&'/3/1'),0,3),'第四学期',
+     if(InMonths(6,处理时间,date('20'&(left(读者条码,2)+2)&'/9/1'),0,3),'第五学期',if(InMonths(6,处理时间,date('20'&(left(读者条码,2)+3)&'/3/1'),0,3),'第六学期',
+     if(InMonths(6,处理时间,date('20'&(left(读者条码,2)+3)&'/9/1'),0,3),'第七学期',if(InMonths(6,处理时间,date('20'&(left(读者条码,2)+4)&'/3/1'),0,3),'第八学期',
+     '第一学期'))))))) as 借书学期,
+     处理时间, 
+     赔罚款, 
+     超期天数, 
+     主题词, 
+     库键码, 
+     题名, 
+     续借次数
+FROM
+图书借阅基本信息.qvd
+(qvd) Where len(读者条码)=12 ;
+
+
+Directory;
+LOAD 学号, 
+     平均成绩等级
+FROM
+学生平均学习成绩等级.qvd
+(qvd);
+
+
+

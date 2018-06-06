@@ -1,0 +1,65 @@
+﻿///$tab Main
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='¥#,##0.00;¥-#,##0.00';
+SET TimeFormat='h:mm:ss';
+SET DateFormat='YYYY/M/D';
+SET TimestampFormat='YYYY/M/D h:mm:ss[.fff]';
+SET MonthNames='一月;二月;三月;四月;五月;六月;七月;八月;九月;十月;十一月;十二月';
+SET DayNames='周一;周二;周三;周四;周五;周六;周日';
+
+
+学生学习成绩:
+LOAD 学号, 
+     学年, 
+     学期, 
+     课程代码, 
+     课程名称, 
+     课程属性, 
+     课程性质, 
+     课程类别, 
+     考试成绩, 
+//     Avg(考试成绩) as 平均成绩,
+//     if( Avg(考试成绩)>=85,'优',if( Avg(考试成绩)>=75,'良','一般')) as 平均成绩等级,
+     取得学分
+FROM
+学生成绩信息.qvd(qvd) ;
+
+
+学生学习课程门数:
+LOAD 学号,
+    Count (DISTINCT 课程代码) as 课程门数
+    Resident 学生学习成绩 Group By 学号;
+    
+学生平均学习成绩:
+Load 
+学号,
+Avg(考试成绩) as 平均成绩
+Resident 学生学习成绩 Group By 学号;
+
+Right Join
+LOAD 学号,
+     课程门数
+Resident 学生学习课程门数 Where 课程门数>=10;
+
+STORE 学生平均学习成绩 into 学生平均学习成绩.qvd(qvd);
+
+NoConcatenate
+学生平均学习成绩等级:
+Load 
+学号,
+if( Avg(考试成绩)>=85,'优秀',if( Avg(考试成绩)>=75,'良好',if(Avg(考试成绩)>=60,'一般'))) as 平均成绩等级
+Resident 学生学习成绩 Group By 学号;
+
+Right Join
+LOAD 学号,
+     课程门数
+Resident 学生学习课程门数 Where 课程门数>=10;
+
+DROP Table 学生学习课程门数;
+
+ 
+STORE 学生平均学习成绩等级 into 学生平均学习成绩等级.qvd(qvd);
+

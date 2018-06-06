@@ -1,0 +1,62 @@
+﻿///$tab Main
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='¥#,##0.00;¥-#,##0.00';
+SET TimeFormat='h:mm:ss';
+SET DateFormat='YYYY/M/D';
+SET TimestampFormat='YYYY/M/D h:mm:ss[.fff]';
+SET MonthNames='一月;二月;三月;四月;五月;六月;七月;八月;九月;十月;十一月;十二月';
+SET DayNames='周一;周二;周三;周四;周五;周六;周日';
+
+
+
+
+
+Directory;
+LOAD 学号, 
+     等级
+FROM
+体质测试平均成绩.qvd
+(qvd);
+
+Left Join
+LOAD 学号, 
+     平均成绩等级
+FROM
+学生平均学习成绩等级.qvd
+(qvd);
+
+Left Join
+LOAD 学号, 
+//     考生号, 
+//     身份证号, 
+//     XYBH, 
+     学院, 
+//     ZYBH, 
+     专业,
+//     学生层次, 
+//     XKML, 
+//     学科门类, 
+     if(Interval(2015-年级,'D')>4,'大五',if(Interval(2015-年级,'D')>3,'大四',if(Interval(2015-年级,'D')>2,'大三',if(Interval(2015-年级,'D')>=1,'大二','大一')))) as 学生年级
+//     入学年份, 
+//     班级编号
+//     性别, 
+//     SYSQ, 
+//     MZ, 
+//     民族, 
+//     ZZMM, 
+//     政治面貌, 
+//     出生日期, 
+//     籍贯, 
+//     学制, 
+//     PYFS, 
+//     培养方式, 
+//     招生类别, 
+//     高考总分, 
+//     ORIGIN_VER
+FROM
+学生基本信息.qvd
+(qvd);
+
