@@ -1,5 +1,6 @@
 
-python版本——python3最新版
+### python版本
+    python3 任意版本
 
 下载脚本[weiboSpider.py](https://github.com/ggzhang0071/ipv6Project/blob/master/Spider/Python_script/weiboSpider.py)
 
@@ -11,6 +12,10 @@ python版本——python3最新版
 
 则会有相关内容输出
 ![](spidercontent.jpg)
+
+输出内容为河科大学生的相关帖子内容
+
+将输出内容重定向到文件或数据库中，即可进行自然语言的分析
   
 
 
